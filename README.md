@@ -1,6 +1,6 @@
 # Film Research Pipeline
 
-A multi-agent CLI tool that automates documentary film research. Given a topic or concept, it generates targeted search queries, fans out across four source categories in parallel, and synthesizes a production-ready research brief.
+A multi-agent CLI tool that automates documentary film research! Given a topic or concept, it generates targeted search queries, fans out across four source categories in parallel, and synthesizes a production-ready research brief.
 
 ```
 Planner (Claude) → Research agents (Exa / Claude web search) → Curator (Claude) → Brief
@@ -10,10 +10,10 @@ Planner (Claude) → Research agents (Exa / Claude web search) → Curator (Clau
 ## Features
 
 - **Parallel research** across footage, editorial, academic, and B-roll sources
-- **Dual search backends** — Exa neural search (preferred) or Claude web search fallback
+- **Dual search backends**: Exa neural search (preferred) or Claude web search fallback
 - **Structured brief** with narrative angles, source notes, expert voices, and visual strategy
-- **Notion export** — automatically creates a child page with linked sources
-- **Markdown output** — save the brief locally with `--output`
+- **Notion export**: automatically creates a child page with linked sources
+- **Markdown output**: save the brief locally with `--output`
 
 ## Setup
 
@@ -73,10 +73,10 @@ python film_research.py "factory farming and climate" --output brief.md
 
 ## How it works
 
-1. **Planner** — Claude generates domain-specific search queries (video, editorial, research, B-roll) tailored to documentary production needs.
-2. **Research agents** — queries fan out concurrently; each hits Exa's neural search filtered to relevant domains, or falls back to Claude's built-in web search tool.
-3. **Curator** — Claude reads all collected sources and writes a structured brief: narrative angles, footage recommendations, expert voices, data anchors, and visual language strategy.
-4. **Notion push** (optional) — the brief and linked sources are posted as a formatted child page.
+1. **Planner**: Claude generates domain-specific search queries (video, editorial, research, B-roll) tailored to documentary production needs.
+2. **Research agents**: queries fan out concurrently; each hits Exa's neural search filtered to relevant domains, or falls back to Claude's built-in web search tool.
+3. **Curator**: Claude reads all collected sources and writes a structured brief: narrative angles, footage recommendations, expert voices, data anchors, and visual language strategy.
+4. **Notion push** (optional): the brief and linked sources are posted as a formatted child page.
 
 ## Source categories
 
